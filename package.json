@@ -1,0 +1,28 @@
+{
+  "name": "driving_license_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "driving_license_bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "download-all-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/15 allQuestions",
+    "download-all-questions-better": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/15 allQuestions",
+    "download-basic-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/24 basicQuestion",
+    "download-vehicle-classes-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/16 vehicleClasses",
+    "download-another-rules-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/25 anotherRules",
+    "download-traffic-signs-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/14 trafficSigns",
+    "download-situations-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/17 situations",
+    "download-safeDriving-A-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/23 safeDrivingA",
+    "download-safeDriving-B-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/19 safeDrivingB",
+    "download-safeDriving-C-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/18 safeDrivingC",
+    "download-related-regulations-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/21 relatedRegulations",
+    "download-vehicle-operating-conditions-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/22 vehicleOperatingConditions",
+    "download-medical-preparation-questions": "node index_better.js https://etesty2.mdcr.cz/Test/TestPractise/20 medicalOreparation",
+    "run-all": "npm run download-basic-questions && npm run download-vehicle-classes-questions && npm run download-another-rules-questions && npm run download-traffic-signs-questions && npm run download-situations-questions && npm run download-safeDriving-A-questions && npm run download-safeDriving-B-questions && npm run download-safeDriving-C-questions && npm run download-related-regulations-questions && npm run download-vehicle-operating-conditions-questions && npm run download-medical-preparation-questions"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^18.0.5"
+  }
+}
